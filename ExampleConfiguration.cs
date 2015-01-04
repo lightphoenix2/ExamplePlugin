@@ -1,15 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Rocket.RocketAPI;
-
-namespace ExamplePlugin
+﻿namespace ExamplePlugin
 {
-    public class ExampleConfiguration : RocketConfiguration
+    public class ExampleConfiguration
     {
-        public string aText = "test";
-        public int aNumber = 42;
+        public string Name = "Karl";
+        public int Age = 42;
     }
 }

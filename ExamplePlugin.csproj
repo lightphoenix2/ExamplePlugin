@@ -66,8 +66,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CommandTest.cs" />
+    <Compile Include="ExampleComponent.cs" />
     <Compile Include="ExampleConfiguration.cs" />
-    <Compile Include="ExamplePlugin.cs" />
+    <Compile Include="ExamplePlayerComponent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -1,27 +1,18 @@
-﻿using System;
-using System.Text;
-
-using SDG;
-using UnityEngine;
-using Rocket.RocketAPI;
+﻿using SDG;
 
 namespace ExamplePlugin
 {
-    class CommandTest : RocketCommand
+    class CommandTest : Command
     {
-        public void Execute(SDG.SteamPlayerID caller, string command)
+        public CommandTest()
         {
-            ChatManager.say(String.Format("Your testmessage is: {0}", ExamplePlugin.Configuration.aText));
+            base.commandName = "test";
+            base.commandInfo = base.commandHelp = "This is a testcommand";
         }
 
-        public string Name
+        public override void execute(SteamPlayerID caller, string command)
         {
-            get { return "Test"; }
-        }
-
-        public string Help
-        {
-            get { return "This is a helpmessage"; }
+            ChatManager.say("Test");
         }
     }
 }
