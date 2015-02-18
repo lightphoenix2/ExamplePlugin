@@ -1,5 +1,4 @@
-﻿using Rocket.RocketAPI;
-namespace ExamplePlugin
+﻿namespace ExamplePlugin
 {
     public class ExampleConfiguration
     {
