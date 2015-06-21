@@ -1,9 +1,9 @@
-﻿using Rocket.RocketAPI;
-using Rocket.Logging;
+﻿using Rocket.API;
+using Rocket.Core.Logging;
 
 namespace ExamplePlugin
 {
-    public class ExamplePlugin : RocketPlugin<ExampleConfiguration>
+    public class ExamplePlugin : IRocketPlugin<ExampleConfiguration>
     {
         protected override void Load()
         {
